@@ -1,0 +1,152 @@
+select{
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.results{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 36px;
+}
+.result__wrapper{
+    padding: 24px 28px;
+}
+.result{
+   
+    max-width: 300px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.play__btn--wrapper{
+    display: flex;
+    justify-content: center;
+    transform: translateY(150px);
+    
+    
+}
+
+.skeleton{
+    width: 100%;
+    max-width: 350px;
+    padding: 24px 28px;
+    height: 430px;
+    margin: 24px 0;
+}
+.result__wrapper--skeleton {
+    width: 100%;
+    max-width: 300px;
+    height: 430px;
+    background-color: rgb(204, 204, 204);
+    padding: 24px 28px;
+    border-radius: 10px;
+}
+
+
+
+.play__btn{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;  
+    transition: all 300ms ease;
+    visibility: hidden;  
+
+}
+.result:hover .play__btn{
+    visibility: visible;
+}
+.play__btn--wrapper > .MuiSvgIcon-root {
+    font-size: 100px;
+
+}
+.result:hover  .play__btn{
+    z-index: 100;
+    
+   
+}
+.result__poster--img{
+    width:100%;
+    position: relative;
+    border-radius: 10px;
+    overflow:hidden;
+    transition: all 300ms ease;
+    
+
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+.type__box{
+    border: 1px solid gray;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.result:hover {
+    transform: scale(1.1);
+}
+.result:hover .result__poster--img{
+    opacity: 0.5;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 18px;
+}
+.page__text{
+    color: grey;
+    padding-right:12px;
+}
+.pages__input{
+    width:30px;
+    color: white;
+    background-color: #111;
+    border: 2px solid grey;
+    padding: 4px;
+    border-radius: 5px;
+}
+.page__btn--wrapper{
+    padding: 0 12px;
+}
+.page__btn{
+    background-color: #950050;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+.page__btn:hover {
+    transform: scale(1.07);
+}
+.movies__header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 32px 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
